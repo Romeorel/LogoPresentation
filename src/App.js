@@ -9,9 +9,23 @@ function App() {
         <div>
             <div>Personal Assistant</div>
 
-            <ProfileCard title = "Alexa" handle= "@alexa99" imageSrc = {AlexaImage} />
-            <ProfileCard title = "Cortana" handle= "@cortana32" imageSrc= {CortanaImage} />
-            <ProfileCard title = "Siri" handle= "@siri01" imageSrc= {SiriImage} />
+            <div className='container'>
+                <section className='section'>
+                    <div className='columns'>
+                        <div className='column is-4'>
+                        <ProfileCard title = "Alexa" handle= "@alexa99" imageSrc = {AlexaImage} />
+                        </div>
+                        <div className='column is-4'>
+                        <ProfileCard title = "Cortana" handle= "@cortana32" imageSrc= {CortanaImage} />
+                        </div>
+                        <div className='column is-4'>
+                        <ProfileCard title = "Siri" handle= "@siri01" imageSrc= {SiriImage} />
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
         </div>
     );
 
